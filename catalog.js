@@ -43,9 +43,34 @@ const projects = [
 
 const list = document.querySelector("#project-list");
 if (list) {
+  const controls = document.createElement("div");
+  controls.className = "catalog-controls";
+  controls.innerHTML = '<div class="catalog-filters" role="group" aria-label="Filtrar por nicho"></div><label class="catalog-search"><span>Buscar experiência</span><input type="search" placeholder="Nome ou interação" autocomplete="off"></label><p class="catalog-count" aria-live="polite"></p>';
+  list.before(controls);
+  const filterHost = controls.querySelector(".catalog-filters");
+  const search = controls.querySelector("input");
+  const count = controls.querySelector(".catalog-count");
+  const categories = ["Todos", ...new Set(projects.map(([category]) => category))];
+  let activeCategory = "Todos";
+  for (const category of categories) {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.textContent = category;
+    button.className = "catalog-filter";
+    button.setAttribute("aria-pressed", String(category === activeCategory));
+    button.addEventListener("click", () => {
+      activeCategory = category;
+      for (const option of filterHost.children) option.setAttribute("aria-pressed", String(option === button));
+      update();
+    });
+    filterHost.append(button);
+  }
+  const cards = [];
   for (const [category, title, slug, description] of projects) {
     const card = document.createElement("article");
     card.className = "project-item";
+    card.dataset.category = category;
+    card.dataset.search = `${title} ${description} ${category}`.toLocaleLowerCase("pt-BR");
     card.innerHTML = `<span class="project-category"></span><h3></h3><p></p><div class="project-links"><a class="project-live" target="_blank" rel="noopener">Abrir demo ↗</a><a class="project-code" target="_blank" rel="noopener">GitHub ↗</a></div>`;
     card.querySelector(".project-category").textContent = category;
     card.querySelector("h3").textContent = title;
@@ -53,5 +78,17 @@ if (list) {
     card.querySelector(".project-live").href = `https://oluisvi.github.io/servagency-demo-${slug}/`;
     card.querySelector(".project-code").href = `https://github.com/oluisvi/servagency-demo-${slug}`;
     list.append(card);
+    cards.push(card);
   }
+  function update() {
+    const query = search.value.trim().toLocaleLowerCase("pt-BR");
+    let visible = 0;
+    for (const card of cards) {
+      card.hidden = (activeCategory !== "Todos" && card.dataset.category !== activeCategory) || !card.dataset.search.includes(query);
+      if (!card.hidden) visible++;
+    }
+    count.textContent = `${visible} ${visible === 1 ? "experiência" : "experiências"} para explorar`;
+  }
+  search.addEventListener("input", update);
+  update();
 }
