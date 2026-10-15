@@ -34,6 +34,7 @@ As marcas de leads reais só entram em demos direcionadas após conferir informa
 ## Diretrizes e referências
 
 - Materiais fornecidos pelo usuário estão descritos em `docs/fontes-e-diretrizes.md`.
+- O [Vibe Coding Toolkit](https://github.com/soumatheusgomes/vibe-coding-toolkit) foi clonado localmente e aplicado onde cabe a este catálogo; decisões em `docs/toolkit-matheus.md`.
 - A pesquisa Awwwards, Siteinspire e Godly está em `docs/referencias-e-fontes.md`.
 - Trate galeria como inspiração, não como prova de conversão nem molde para copiar.
 - Priorize identidade própria por nicho, navegação evidente, mobile, teclado/toque, reduced motion e desempenho. Vídeo/3D entram quando agregam valor e há asset e autorização adequados.
