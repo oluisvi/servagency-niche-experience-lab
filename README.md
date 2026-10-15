@@ -1,40 +1,42 @@
 # ServAgency — laboratório de demos por nicho
 
-Este workspace reúne estudos demonstrativos para transformar oportunidades observadas em pesquisas e conversas da ServAgency em experiências digitais concretas. O catálogo é uma vitrine de possibilidades, não uma promessa de escopo ou de resultado.
+Este workspace reúne estudos demonstrativos para traduzir oportunidades em experiências digitais concretas. O catálogo é uma vitrine de possibilidades, não uma promessa de escopo ou resultado.
 
-## Como abrir
+## Demos deste laboratório
 
-Abra `index.html` num servidor estático local. A estrutura usa apenas HTML, CSS e JavaScript; não precisa de dependências de build. O site precisa ser servido na raiz para que os caminhos absolutos funcionem.
+- **Casa Miga — estudo simplificado** (`/demos/casa-miga/`): padaria fictícia com microanimação e menu inventado. Serve como rascunho setorial; não substitui a demo interna avançada da ServAgency.
+- **FORMA LIVRE** (`/demos/forma-livre/`): sneaker shop fictícia com objeto arrastável, variantes visuais e preço ilustrativo.
 
-## Demos implementadas
+## Referências próprias da ServAgency
 
-- **Casa Miga** (`/demos/casa-miga/`): padaria fictícia; apresentação de marca, menu, microanimação de croissant girando e cardápio ilustrativo.
-- **FORMA LIVRE** (`/demos/forma-livre/`): loja fictícia de sneakers; produto demonstrativo com interação de arrasto, seleção de tamanho e catálogo ilustrativo.
+Projetos existentes que devem orientar direção e ambição conforme o problema: [Pão do Pedro](https://servagency.vercel.app/) para gastronomia e conversão local; [Casa Miga](https://casa-miga.vercel.app/) e [Lume Music](https://lume-music-tan.vercel.app/) para vídeo/scroll; [Lamim's Barbershop](https://lamim-s-barbershop.vercel.app/) para cena espacial 3D e agendamento; [Shop.co](https://shop-co-store.vercel.app/) para e-commerce funcional; Alvora Lab para catálogo 3D; Casa Aurora para tour 360° e planta; Ruvro & Co para showroom editorial; Ferreira Imóveis para curadoria imobiliária. Veja `docs/referencias-e-fontes.md` e a nota Obsidian para o portfólio completo e as limitações.
 
-## Projetos e oportunidades para próximas demos
+| Referência ServAgency | Padrão útil | Oportunidades de adaptação |
+|---|---|---|
+| Pão do Pedro | identidade gastronômica, menu editorial, conversão local | restaurantes, hambúrguerias, pizzarias, pastelarias, cafés e padarias |
+| Casa Miga / Lume Music | filme de produto e narrativa audiovisual com scroll | gastronomia, música, moda e produto, usando mídia licenciada e alternativa estática |
+| Lamim's Barbershop | entrada guiada, exploração espacial 3D, hotspots, agendamento com fallback | barbearias, clínicas, showrooms e hospitalidade quando o espaço ajuda a entender o serviço |
+| Shop.co | catálogo, carrinho, checkout e gestão | tênis, roupas, bolsas, óculos, perfumaria e varejo |
+| Alvora Lab | catálogo 3D e personalização | marcenaria, móveis, brindes e fabricação digital |
+| Casa Aurora | panorama 360° e planta interativa | arquitetura, imóveis, pousadas e hotelaria |
+| Ruvro & Co | showroom editorial premium | relógios, joias, eyewear e colecionáveis |
+| Ferreira Imóveis | curadoria e contato direto | imobiliárias boutique e imóveis especiais |
 
-A fila inicial cobre grupos presentes nas notas do Obsidian e nos relatórios de prospecção:
+## Oportunidades identificadas nas pesquisas/notas
 
-1. **Alimentação e hospitalidade:** Yaki Go / Yakisoba do Cowboy, Osteria Nonna Rosa, Pão do Pedro, Café na Bike, TEG Restaurante, Calçada da Villa, gourmet artesanal; pizzaria e pastelaria como conceitos setoriais.
-2. **Moda e acessórios:** sneakers, bolsas/curadoria, eyewear/ótica, relojoaria e vintage.
-3. **Serviços locais:** elétrica, hidráulica, geradores, manutenção residencial e assistência técnica.
-4. **Espaços e serviços presenciais:** marcenaria/interiores, imobiliário, barbearia, estética e hospedagem/experiências.
-5. **Produtos digitais:** educação e SaaS, com FlowDesk e outros projetos do portfólio como referências de capacidade.
+Gastronomia e hospitalidade (Yaki Go, Nonna Rosa, Pão do Pedro, Café na Bike, TEG, Calçada da Villa, panificação artesanal, pizzaria/pastelaria); moda e acessórios (tênis, bolsas, eyewear, relógios, vintage); serviços locais (elétrica, hidráulica, geradores, manutenção, assistência); espaços (marcenaria, interiores, imóveis, hospedagem); serviços presenciais (barbearia, estética); produtos digitais (educação, SaaS/FlowDesk e outros). A nota de projeto no Obsidian contém a matriz detalhada.
 
-Cada item precisa de sua própria direção artística e fluxo. As marcas de leads reais só devem aparecer em protótipos direcionados com informações e ativos conferidos; a vitrine pública deste catálogo usa conceitos fictícios.
+As marcas de leads reais só entram em demos direcionadas após conferir informações, ativos e autorização. O catálogo público usa conceitos fictícios.
 
-## Referências aplicadas
+## Diretrizes e referências
 
-- Materiais do Armazém de Prompts listados em `docs/fontes-e-diretrizes.md`.
-- `GUIA_SITES_COM_VIDEO_E_SCROLL`: usar vídeo apenas quando filmagem/asset licenciado ajudar a narrativa; o presente ciclo privilegia CSS/ilustração para não bloquear a experiência.
-- `ENTRADA_TEMATICA_SINCRONIZADA_COM_CARREGAMENTO_3D`: aplicar entrada sincronizada apenas quando houver Canvas/WebGL real; estes estudos não simulam preload 3D.
-- `UNIVERSAL_ADAPTIVE_DESIGN_SYSTEM`: manter qualidade compartilhada e expressão independente, com reduced motion, mobile e performance considerados.
-- `vibe-coding-toolkit`: aplicado como inspiração para preservar contratos existentes, documentar hipóteses/limites e evitar setup global indiscriminado. Toolkit: https://github.com/soumatheusgomes/vibe-coding-toolkit
-
-## Limites
-
-Marcas, produtos, texto comercial, menu, preços, disponibilidade e CTAs são fictícios/ilustrativos nas duas demos públicas. Não há checkout, reservas, pedido real, tracking, API, CMS ou integração de WhatsApp. As fotos/ilustrações são de estudo. Nenhuma métrica de performance ou conversão foi estabelecida.
+- Materiais fornecidos pelo usuário estão descritos em `docs/fontes-e-diretrizes.md`.
+- A pesquisa Awwwards, Siteinspire e Godly está em `docs/referencias-e-fontes.md`.
+- Trate galeria como inspiração, não como prova de conversão nem molde para copiar.
+- Priorize identidade própria por nicho, navegação evidente, mobile, teclado/toque, reduced motion e desempenho. Vídeo/3D entram quando agregam valor e há asset e autorização adequados.
+- Confira o portfólio e limites comerciais da ServAgency no Obsidian antes de fazer uma proposta a um lead.
 
 ## GitHub e Vercel
 
-Este diretório iniciou sem commits, remotes ou aplicação. Integração Vercel conectada permite visualizar/gerir projetos e criar deployments a partir de arquivos, mas o deploy confiável requer projeto Git vinculado ou upload completo. A integração GitHub disponível lista repositórios e cria/atualiza arquivos apenas em repositório existente; não expõe criação de repositório. Registre aqui links quando a publicação estiver conectada.
+Repositório: https://github.com/oluisvi/servagency-niche-experience-lab (branch `main`). O deploy Vercel aguarda permissão para criar/conectar projeto no time.
+
