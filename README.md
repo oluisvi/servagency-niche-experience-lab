@@ -4,8 +4,11 @@ Este workspace reúne estudos demonstrativos para traduzir oportunidades em expe
 
 ## Demos deste laboratório
 
-- **Casa Miga — estudo simplificado** (`/demos/casa-miga/`): padaria fictícia com microanimação e menu inventado. Serve como rascunho setorial; não substitui a demo interna avançada da ServAgency.
-- **FORMA LIVRE** (`/demos/forma-livre/`): sneaker shop fictícia com objeto arrastável, variantes visuais e preço ilustrativo.
+O catálogo em `index.html` reúne 40 experiências conceituais independentes. Cada projeto tem um repositório público próprio `oluisvi/servagency-demo-<slug>` e uma publicação correspondente em GitHub Pages `https://oluisvi.github.io/servagency-demo-<slug>/`. Os arquivos fonte locais ficam em `projects/<grupo>/<slug>/` e não são incorporados ao repositório da vitrine.
+
+As demos cobrem gastronomia, moda, beleza, serviços, espaços, produtos digitais e especialidades. Têm animações e interações diferentes conforme o nicho. Os objetos 3D aparentes são ilustrações CSS/SVG; cenas que não usam vídeo ou 3D real não se apresentam como tal. As marcas, valores e ofertas são fictícios, e formulários demonstrativos não enviam pedidos.
+
+Os dois estudos iniciais continuam disponíveis em `demos/casa-miga/` e `demos/forma-livre/` como rascunhos anteriores ao catálogo ampliado.
 
 ## Referências próprias da ServAgency
 
@@ -36,7 +39,7 @@ As marcas de leads reais só entram em demos direcionadas após conferir informa
 - Priorize identidade própria por nicho, navegação evidente, mobile, teclado/toque, reduced motion e desempenho. Vídeo/3D entram quando agregam valor e há asset e autorização adequados.
 - Confira o portfólio e limites comerciais da ServAgency no Obsidian antes de fazer uma proposta a um lead.
 
-## GitHub e Vercel
+## Publicação
 
-Repositório: https://github.com/oluisvi/servagency-niche-experience-lab (branch `main`). O deploy Vercel aguarda permissão para criar/conectar projeto no time.
+Vitrine: https://github.com/oluisvi/servagency-niche-experience-lab (branch `main`). A criação do projeto Vercel foi aceita, mas a API respondeu `403` ao criar um deployment. Por isso, as páginas públicas das demos foram publicadas via GitHub Pages. O Vercel exige ajuste de permissão antes de hospedar a vitrine ou as demos nessa conta.
 
