@@ -42,6 +42,6 @@ As marcas de leads reais só entram em demos direcionadas após conferir informa
 
 ## Publicação
 
-Vitrine: https://github.com/oluisvi/servagency-niche-experience-lab (branch `main`). A criação do projeto Vercel foi aceita, mas a API respondeu `403` ao criar um deployment. Por isso, as páginas públicas das demos foram publicadas via GitHub Pages. O Vercel exige ajuste de permissão antes de hospedar a vitrine ou as demos nessa conta.
+Vitrine: https://github.com/oluisvi/servagency-niche-experience-lab (branch `main`). As 40 páginas públicas das demos foram publicadas via GitHub Pages e responderam HTTP 200 nesta conferência. O projeto Vercel da vitrine existe e está conectado ao GitHub; a API MCP retornou `403 Forbidden` ao consultar deployments nesta rodada, então o estado do build Vercel não pôde ser confirmado.
 
 

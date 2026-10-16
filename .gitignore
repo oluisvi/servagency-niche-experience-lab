@@ -4,3 +4,12 @@ toolkits/
 
 .playwright-cli/
 /aurora-before.png
+/qa-*.png
+/qa-*.js
+/qa-*.py
+/qa-shots/
+/*-1440.png
+/*-360.png
+/*-interaction.png
+/*-final.png
+/*-stage-final.png
