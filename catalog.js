@@ -10,7 +10,7 @@ const projects = [
   ["Moda & beleza", "Lumea Eyewear", "lumea-eyewear", "Armações e acabamentos"],
   ["Moda & beleza", "Noma Bags", "noma-bags", "Bolsas, cores e parallax"],
   ["Moda & beleza", "Sombra Perfumaria", "sombra-perfumaria", "Notas olfativas e atmosferas"],
-  ["Moda & beleza", "Vetor Sneakers", "vetor-sneakers", "Tênis, cores e numerações"],
+  ["Moda & beleza", "Vetor Sneakers", "vetor-sneakers", "Tênis fotográfico, colorways e modelo 3D explorável"],
   ["Moda & beleza", "Mira Atelier", "mira-salao", "Serviços e pré-consulta"],
   ["Moda & beleza", "Rito Presentes", "rito-presentes", "Velas e caixa configurável"],
   ["Serviços", "Prumo", "prumo", "Reparos e preparação de pedido"],

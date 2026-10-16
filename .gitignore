@@ -1,3 +1,6 @@
 projects/
 toolkits/
 
+
+.playwright-cli/
+/aurora-before.png
